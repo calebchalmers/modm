@@ -31,7 +31,9 @@ extern "C"
 {
 #endif
 
+#if __has_include(<modm/platform/device.hpp>)
 #include <modm/platform/device.hpp>
+#endif
 
 /* Local configuration file */
 #if __has_include(<arm_math_local.h>)
